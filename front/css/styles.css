@@ -4,7 +4,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+    color: #e0cda9;
     font-family: Arial, sans-serif;
 }
 
@@ -31,7 +31,7 @@ header {
 }
 
 header h1 {
-    color: #fff;           
+    color:#e0cda9;           
     text-decoration: none;
     font-size: 28px;      
     margin: 0;  
@@ -46,7 +46,7 @@ header nav {
 }
 
 header a {
-    color: #fff;          
+    color:#e0cda9;          
     text-decoration: none; 
     font-size: 28px;       
 }
@@ -59,7 +59,7 @@ header a {
 }
 
 .login-form {
-    background: rgba(20, 20, 60, 0.9);
+    background: rgba(34, 21, 68, 0.9);
     border-radius: 12px;
     padding: 40px;
     width: 320px;
@@ -98,8 +98,8 @@ header a {
     padding: 12px 10px;
     border: none;
     background: transparent;
-    border-bottom: 2px solid #fff;
-    color: #fff;
+    border-bottom: 2px solid #e0cda9;
+    color: #e0cda9;
     outline: none;
     font-size: 16px;
     text-indent: 2px;
@@ -110,7 +110,7 @@ header a {
 .input-field input:not(:placeholder-shown) + label {
     top: 0;
     font-size: 12px;
-    color: #fff;
+    color: #e0cda9;
 }
 
 .toggle-password {
@@ -120,7 +120,7 @@ header a {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #fff;
+    color: #e0cda9;
     cursor: pointer;
     font-size: 14px;
     padding: 5px;
@@ -141,7 +141,7 @@ button {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    color: #000;
+    color: #110820;
     font-weight: bold;
     transition: background 0.3s, transform 0.2s;
 }
@@ -152,7 +152,7 @@ button:hover {
 }
 
 header a {
-    color: #fff;
+    color: #e0cda9;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s, text-shadow 0.3s;
@@ -176,34 +176,34 @@ header a:hover {
 }
 
 .register-link a:hover {
-    color: #fff;
+    color: #e0cda9;
 }
 
 .options a {
     font-weight: bold;
-    color: #ddd;
+    color: #e0cda9;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .options a:hover {
-    color: #fff;
+    color: #e0cda9;
 }
 
 .register-link {
     font-size: 14px;
-    color: #bbb;
+    color: #e0cda9;
 }
 
 .register-link a {
     font-weight: bold;
-    color: #ddd;
+    color: #e0cda9;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .register-link a:hover {
-    color: #fff;
+    color: #e0cda9;
 }
 
 @keyframes falling-star {
