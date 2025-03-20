@@ -14,4 +14,39 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
+
+function createFallingStar() {
+    const star = document.createElement("div");
+    star.classList.add("star");
+    document.body.appendChild(star);
+
+    const startX = Math.random() * window.innerWidth;
+    star.style.left = `${startX}px`;
+
+    setTimeout(() => {
+        star.remove();
+    }, 3000);
+}
+
+function startFallingStars() {
+    createFallingStar();
+    setTimeout(startFallingStars, Math.random() * 5000 + 5000);  
+}
+
+function createTwinklingStars() {
+    for (let i = 0; i < 50; i++) {
+        const star = document.createElement("div");
+        star.classList.add("star-twinkle");
+        const x = Math.random() * window.innerWidth;
+        const y = Math.random() * window.innerHeight;
+        star.style.left = `${x}px`;
+        star.style.top = `${y}px`;
+        document.body.appendChild(star);
+    }
+}
+
+createTwinklingStars();
+startFallingStars();
+
+
 });
