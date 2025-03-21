@@ -1,5 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     const inputs = document.querySelectorAll(".input-field input");
+    const loginForm = document.getElementById("login-form");
+    const registerForm = document.getElementById("register-form");
+    const formWrapper = document.querySelector(".form-wrapper");
+    const showRegister = document.getElementById("show-register");
+    const showLogin = document.getElementById("show-login");
+
+    showRegister.addEventListener("click", (e) => {
+        e.preventDefault();
+        loginForm.style.display = "none";
+        registerForm.style.display = "flex";
+        formWrapper.style.height = "auto"; 
+    });
+
+    showLogin.addEventListener("click", (e) => {
+        e.preventDefault();
+        registerForm.style.display = "none";
+        loginForm.style.display = "flex";
+        formWrapper.style.height = "auto";
+    });
 
     inputs.forEach(input => {
         input.addEventListener("focus", () => {
@@ -15,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-function createFallingStar() {
+    function createFallingStar() {
     const star = document.createElement("div");
     star.classList.add("star");
     document.body.appendChild(star);
@@ -26,14 +45,14 @@ function createFallingStar() {
     setTimeout(() => {
         star.remove();
     }, 3000);
-}
+    }
 
-function startFallingStars() {
+   function startFallingStars() {
     createFallingStar();
     setTimeout(startFallingStars, Math.random() * 5000 + 5000);  
-}
+   }
 
-function createTwinklingStars() {
+   function createTwinklingStars() {
     for (let i = 0; i < 50; i++) {
         const star = document.createElement("div");
         star.classList.add("star-twinkle");
@@ -43,10 +62,8 @@ function createTwinklingStars() {
         star.style.top = `${y}px`;
         document.body.appendChild(star);
     }
-}
+    }
 
-createTwinklingStars();
-startFallingStars();
-
-
+    createTwinklingStars();
+    startFallingStars();
 });

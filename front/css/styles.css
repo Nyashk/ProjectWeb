@@ -252,3 +252,90 @@ header a:hover {
 .star-twinkle:nth-child(even) {
     animation-duration: 3s;
 }
+
+.register-form {
+    background: rgba(34, 21, 68, 0.9);
+    border-radius: 12px;
+    padding: 40px;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.register-form:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.register-form .input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.register-form .input-field label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #bbb;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.register-form .input-field input {
+    width: 100%;
+    padding: 12px 10px;
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #e0cda9;
+    color: #e0cda9;
+    outline: none;
+    font-size: 16px;
+    text-indent: 2px;
+}
+
+.register-form .input-field input:focus + label,
+.register-form .input-field input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 12px;
+    color: #e0cda9;
+}
+
+.register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e0cda9;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #110820;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.register-form button:hover {
+    background-color: #f0d9b5;
+    transform: scale(1.05);
+}
+
+.register-form .login-link {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.register-form .login-link a {
+    font-weight: bold;
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register-form .login-link a:hover {
+    color: #e0cda9;
+}
