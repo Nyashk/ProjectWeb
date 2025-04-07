@@ -66,4 +66,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     createTwinklingStars();
     startFallingStars();
+
+     document.querySelector(".login-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        window.location.href = "home.html";
+    });
+
+    document.querySelector(".register-form")?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        window.location.href = "home.html";
+    });
 });
